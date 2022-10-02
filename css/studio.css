@@ -1,0 +1,76 @@
+        /* Стили для <main> STUDIO */
+
+/* basic */
+.basic {
+    background-color: var(--backgr-black);
+
+}
+
+.basic .title {
+    color: var(--text-backgr-white);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.basic_btn {
+    background-color: var(--a-hover-focus--btn);
+    color: var(--text-backgr-white);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+}
+
+.basic_btn:hover,
+.basic_btn:focus {
+    background-color: var(--btn-hover-focus);
+}
+
+/* prioritie */
+.prioritie .title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+/* service */
+
+
+
+/* team */
+.team {
+    background-color: var(--backgr-team);
+}
+
+.team-list .item {
+    background-color: var(--text-backgr-white);
+}
+
+.team-list,
+.team-list .title {
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.team-list .title {
+    font-weight: 500;
+}
+
+
+.service > .title,
+.team > .title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+}

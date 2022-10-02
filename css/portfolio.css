@@ -1,0 +1,35 @@
+/* Стили для <main> PORTFOLIO */
+
+.portfolio-filter__btn {
+    background-color: var(--backgr-team);
+    color: var(--title);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    cursor: pointer;
+}
+
+.portfolio-filter__btn:hover,
+.portfolio-filter__btn:focus {
+    background-color: var(--a-hover-focus--btn);
+    color: var(--text-backgr-white);
+}    
+
+.project {
+    color: var(--text);
+    font-size: 16px;
+    line-height: 1.9;
+    text-decoration: none;
+}
+
+.project__title {
+    color: var(--title);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+

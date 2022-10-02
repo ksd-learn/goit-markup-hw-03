@@ -1,0 +1,104 @@
+        /* БАЗОВЫЕ СТИЛИ + header + footer */
+
+:root {
+    --title: #212121;
+    --text: #757575;
+    --a-hover-focus--btn: #2196F3;
+    --btn-hover-focus: #188CE8;
+    --text-backgr-white: #FFFFFF;
+    --text-gray: rgba(255, 255, 255, 0.6);
+    --backgr-black: #2F303A;
+    --backgr-prior-service: #F5F5F5;
+    --backgr-team: #F5F4FA;
+    --black: #000000;
+}
+
+body {
+    color: var(--text);
+    background-color: var(--text-backgr-white);
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
+}
+
+/* класс для сокрытия элемента (блока) */
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+/* ОБЩИЕ:  заголовки<h..> (.title), списки<li>(.item), ссылка<a> */
+.title {
+    color: var(--title);
+}
+
+.item {
+    list-style: none;
+}
+
+.link {
+    color: var(--title);
+    text-decoration: none;
+}
+
+.link:hover,
+.link:focus {
+    color: var(--a-hover-focus--btn);
+}
+
+/* header */
+.header {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+}
+
+.logo {
+    color: var(--a-hover-focus--btn);
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-decoration: none;
+}
+
+.logo span{
+    color: var(--black);
+}
+
+
+.link.current {
+    color: var(--a-hover-focus--btn);
+}
+
+.header-connect_color {
+    color: var(--text);
+}
+
+/* footer */
+.footer {
+    background-color: var(--backgr-black);
+}
+
+.footer span,
+.footer-list_map {
+    color: var(--text-backgr-white);
+}
+
+.footer-list_color {
+    color: var(--text-gray);
+}
+
+.footer-list {
+    font-style: normal;
+}
