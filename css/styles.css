@@ -13,6 +13,17 @@
     --black: #000000;
 }
 
+                /* ОБЩИЕ СТИЛИ */
+/* сброс дефолтных отступов и padding */
+h1, h2, h3,
+ul,
+p {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* body */
 body {
     color: var(--text);
     background-color: var(--text-backgr-white);
@@ -20,6 +31,17 @@ body {
     font-size: 14px;
     line-height: 1.8;
     letter-spacing: 0.03em;
+}
+
+/* глобальный border-box */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
 }
 
 /* класс для сокрытия элемента (блока) */
@@ -36,7 +58,19 @@ body {
     margin: -1px;
 }
 
-/* ОБЩИЕ:  заголовки<h..> (.title), списки<li>(.item), ссылка<a> */
+/* conteiner, заголовки<h..> (.title), списки<li>(.item), ссылка<a>, img */
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+img {
+    display: block;
+}
+
 .title {
     color: var(--title);
 }
@@ -54,6 +88,7 @@ body {
 .link:focus {
     color: var(--a-hover-focus--btn);
 }
+            /* ИНДИВИДУАЛЬНЫЕ СТИЛИ ЭЛЕМЕНТОВ */
 
 /* header */
 .header {
@@ -61,6 +96,8 @@ body {
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.02em;
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 
 .logo {
@@ -88,6 +125,12 @@ body {
 /* footer */
 .footer {
     background-color: var(--backgr-black);
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.footer .logo {
+    margin-bottom: 20px;
 }
 
 .footer span,
@@ -97,6 +140,7 @@ body {
 
 .footer-list_color {
     color: var(--text-gray);
+    margin-top: 9px;
 }
 
 .footer-list {
