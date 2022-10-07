@@ -58,7 +58,7 @@ html {
     margin: -1px;
 }
 
-/* conteiner, заголовки<h..> (.title), списки<li>(.item), ссылка<a>, img */
+/* conteiner и padding для секций */
 
 .container {
     width: 1200px;
@@ -67,6 +67,12 @@ html {
     margin: 0 auto;
 }
 
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+/* заголовки<h..> (.title), списки<li>(.item), ссылка<a>, img */
 img {
     display: block;
 }

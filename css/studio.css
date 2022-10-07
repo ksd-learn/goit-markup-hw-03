@@ -44,11 +44,6 @@
 }
 
 /* prioritie */
-.prioritie{
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
 .prioritie-list {
     display: flex;
 }
@@ -90,8 +85,6 @@
 .team {
     background-color: var(--backgr-team);
     text-align: center;
-    padding-top: 94px;
-    padding-bottom: 94px;
 }
 
 .team-title {

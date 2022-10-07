@@ -1,10 +1,5 @@
 /* Стили для <main> PORTFOLIO */
 
-.portfolio {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
 .portfolio-filter {
     display: flex;
     justify-content: center;
