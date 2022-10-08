@@ -1,13 +1,27 @@
         /* Стили для <main> STUDIO */
 
+
+/* ОБЩИЕ   h2 для service и team*/
+.service .title,
+.team>.title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+}
+
 /* basic */
 .basic {
+    background-color: var(--backgr-black);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
+}
+
+.basic .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--backgr-black);
-    padding-top: 200px;
-    text-align: center;
 }
 
 .basic .title {
@@ -28,13 +42,11 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
-    align-items: center;
     letter-spacing: 0.06em;
     box-shadow: 0px 4px 4px hwb(0 0% 100% / 0.15);
     border: 0 solid transparent;
     border-radius: 4px;
     padding: 10px 32px;
-    margin-bottom: 200px;
     cursor: pointer;
 }
 
@@ -69,16 +81,16 @@
     padding-bottom: 94px;
 }
 
+.service .title {
+    margin-bottom: 50px;
+}
+
 .service-list {
     display: flex;
 }
 
 .service-list .item + .item {
     margin-left: 30px;
-}
-
-.service .title {
-    margin-bottom: 50px;
 }
 
 /* team */
@@ -119,13 +131,4 @@
 .team-list .title {
     font-weight: 500;
     margin-bottom: 10px;
-}
-
-/* h2 для ervice и team*/
-.service > .title,
-.team > .title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.2;
-    text-align: center;
 }

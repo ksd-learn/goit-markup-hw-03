@@ -58,8 +58,7 @@ html {
     margin: -1px;
 }
 
-/* conteiner и padding для секций */
-
+/* conteiner c падингами - для секций */
 .container {
     width: 1200px;
     padding-left: 15px;
@@ -72,7 +71,7 @@ html {
     padding-bottom: 94px;
 }
 
-/* заголовки<h..> (.title), списки<li>(.item), ссылка<a>, img */
+/* заголовки<h..> (.title), списки<li>(.item), link - ссылка<a>, img - уберем нижние просветы */
 img {
     display: block;
 }
@@ -97,6 +96,12 @@ img {
             /* ИНДИВИДУАЛЬНЫЕ СТИЛИ ЭЛЕМЕНТОВ */
 
 /* header */
+header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ECECEC;
+}
+
 .header {
     display: flex;
     align-items: center;
@@ -104,9 +109,6 @@ img {
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.02em;
-    padding-top: 24px;
-    padding-bottom: 25px;
-    border-bottom: 1px solid #ECECEC;
 }
 
 .logo {
@@ -129,6 +131,11 @@ img {
 .header-nav {
     display: flex;
     margin-right: 344px;
+}
+
+.header .link {
+    padding-top: 7px;
+    padding-bottom: 7px;
 }
 
 .header-nav .item + .item,

@@ -33,25 +33,29 @@
 .portfolio-filter__btn:focus {
     background-color: var(--a-hover-focus--btn);
     color: var(--text-backgr-white);
-}  
+}
 
+/* сетка */
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;                              /* вариант 1 - gap*/
 }
-
-.portfolio-list .item {
-    outline: 1px solid #eeeeee;
+                                            /* вариант 2 - отрицат маржин*/
+/* .portfolio-list {
+    margin: -15px;
 }
-
-.portfolio-list .item:nth-child(3n+2) {
+.portfolio-list .item {             
+    margin: 15px;
+} */
+                                            /* вариант 3 - :nth-child*/
+/* .portfolio-list .item:nth-child(3n+2) {
     margin-left: 30px;
     margin-right: 30px;
 }
-
 .portfolio-list .item:nth-child(-n+6) {
    margin-bottom : 30px;
-}
+} */
 
 .project {
     display: block;
@@ -59,11 +63,13 @@
     font-size: 16px;
     line-height: 1.9;
     text-decoration: none;
-    padding-bottom: 20px;
 }
 
-.project img {
-    margin-bottom: 20px;
+.project_border {
+    padding: 20px 24px;
+    padding-bottom: 20px;
+    border: 1px solid #eeeeee;
+    border-top: 0;
 }
 
 .project__title {
@@ -72,12 +78,7 @@
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    margin-left: 24px;
     margin-bottom: 4px;
-}
-
-.project p {
-    margin-left: 24px;
 }
 
 
