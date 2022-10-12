@@ -133,11 +133,6 @@ header {
     margin-right: 344px;
 }
 
-.header .link {
-    padding-top: 7px;
-    padding-bottom: 7px;
-}
-
 .header-nav .item + .item,
 .header-connect .item + .item {
     margin-left: 50px;
